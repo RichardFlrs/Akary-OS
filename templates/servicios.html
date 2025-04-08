@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles04.css') }}">
+</head>
+<body> 
+    <header>
+        <div class="hearder-c">
+            <h2>Akary</h2>
+        </div>
+    </header>
+
+    <section class="titulo">
+        <h1>Servicios</h1>
+    </section>
+
+    <section class="servicios">
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='img/seg.png') }}" alt="Seguridad Avanzada" />
+            <h3>Seguridad Avanzada</h2>
+            <p>Protección contra malware y vulnerabilidades con cifrado y autenticación robusta.</p>
+            <button href="#">Leer más</button>
+        </div>
+        <br>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='img/per.png') }}" alt="Alta Personalización" />
+            <h3>Alta Personalización</h3>
+            <p>Interfaz flexible y adaptable a tus necesidades con múltiples escritorios y temas.</p>
+            <button href="#">Leer más</button>
+        </div>
+        <br>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename="img/alt.png") }}" alt="Alto Rendimiento" />
+            <h3>Alto Rendimiento</h2>
+            <p>Sistema ligero y optimizado para computadoras modernas y antiguas sin sacrificar velocidad.</p>
+            <button href="#">Leer más</button>
+        </div>
+        <br>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='img/sop.png') }}" alt="Soporte Comunitario" />
+            <h3>Soporte Comunitario</h3>
+            <p>Amplia comunidad de usuarios y desarrolladores listos para ayudar en foros y documentación.</p>
+            <button href="#">Leer más</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Akary. Todo los derechos reservados.</p>
+    </footer>
+</body>
+</html>
