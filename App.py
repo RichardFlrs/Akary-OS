@@ -25,7 +25,9 @@ def quienessomos():
 def servicios():
     return render_template("servicios.html")
 
-
+@app.route("/noticias")
+def noticias():
+    return render_template("noticias.html")
 
 
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles05.css') }}">
+</head>
+<body>
+    <header>
+        <div class="hearder-c">
+            <h2>Akary</h2>
+        </div>
+    </header>
+
+    <section class="titulo">
+        <h1>Noticias</h1>
+    </section>
+
+    <section class="noticias">
+        <div class="noticia">
+            <img src="{{ url_for('static', filename="img/lanz.png") }}" alt="Lanzamiento de Akari" />
+            <h3>Lanzamiento de Akary</h3>
+            <p>La nueva versión de Akary ha sido lanzada 
+                con características mejoradas en seguridad y 
+                personalización.
+            </p>
+        </div>
+        <br>
+        <div class="noticia">
+            <img src="{{ url_for('static', filename='img/act.png') }}" alt="Actualización de Software" />
+            <h3>Actualización de Software</h3>
+            <p>Se ha publicado una actualización de software para mejorar el rendimiento y la estabilidad del sistema.</p>
+        </div>
+        <br>
+        <div class="noticia">
+            <img src="{{ url_for('static', filename='img/cre.png') }}" alt="Comunidad Creciendo" />
+            <h3>La comunidad de Akary crece</h3>
+            <p>Más desarrolladores y entusiastas se unen al proyecto, brindando soporte y nuevas ideas innovadoras.</p>
+        </div>
+    </section>
+
+    <section class="acciones">
+        <div class="accion">
+            <a href="{{ url_for('contacto') }}">Contáctanos</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Akary. Todo los derechos reservados.</p>
+    </footer>
+</body>
+</html>
