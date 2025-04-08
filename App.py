@@ -17,6 +17,9 @@ def index():
 def descargas():
     return render_template("descargas.html")
 
+@app.route("/quienessomos")
+def quienessomos():
+    return render_template("quienessomos.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

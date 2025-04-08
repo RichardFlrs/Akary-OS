@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles03.css') }}">
+</head>
+<body>
+    <header>
+        <div class="hearder-c">
+            <h2>Akary</h2>
+        </div>
+    </header>
+
+    <section class="titulo">
+        <h1>Quiénes Somos</h1>
+    </section>
+
+    <section class="detalles">
+        <div class="dell">
+            <h3>Historia</h3>
+            <p>En el año 2010, un grupo de desarrolladores apasionados por 
+                el software libre se unió con una visión: crear un sistema 
+                operativo basado en Linux que fuera ligero, personalizable 
+                y perfecto para usuarios nuevos y avanzados. Así nació Akary, 
+                un sistema diseñado para ofrecer estabilidad, velocidad 
+                y una experiencia de usuario intuitiva.
+                Inspirados en la flexibilidad de Arch Linux y la facilidad de 
+                uso de Linux Mint, el equipo de Akary quería un sistema que
+                pudiera adaptarse tanto a programadores como a creativos y 
+                entusiastas de la informática.
+            </p>
+        </div>
+        <br>
+        <div class="dell">
+            <h3>Misión</h3>
+            <p>Ofrecer un sistema operativo Linux que combine rendimiento, 
+                seguridad y facilidad de uso, permitiendo a los usuarios 
+                personalizar completamente su entorno de trabajo sin 
+                sacrificar estabilidad.
+            </p>
+        </div>
+        <br>
+        <div class="dell">
+            <h3>Visión</h3>
+            <p>Convertirse en una de las distribuciones Linux más accesibles
+                y confiables del mundo, impulsando la adopción de software 
+                libre y fomentando una comunidad colaborativa y abierta.
+            </p>
+        </div>
+    </section>
+
+    <section class="equipo">
+        <h2>Nuestro Equipo</h2>
+        <br>
+        <div class="equipo-c">
+            <div class="miembro">
+                <img src="{{ url_for('static', filename='img/ceo.png') }}" alt="Juan López" />
+                <h3>Juan López</h3>
+                <p>CEO & Fundador</p>
+            </div>
+            <div class="miembro">
+                <img src="{{ url_for('static', filename="img/jefe.png") }}" alt="Carlos García">
+                <h3>Carlos García</h3>
+                <p>Jefe de Desarrollo</p>
+            </div>
+            <div class="miembro">
+                <img src="{{ url_for('static', filename="img/diss.png") }}" alt="Andrés Torres">
+                <h3>Andrés Torres</h3>
+                <p>Diseñador UI/UX</p>
+            </div>
+            <div class="miembro">
+                <img src="{{ url_for('static', filename="img/div.png") }}" alt="Ricardo Fernánez">
+                <h3>Ricardo Fernánez</h3>
+                <p>Divulgador de Akary</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Akary. Todo los derechos reservados.</p>
+    </footer>
+</body>
+</html>
