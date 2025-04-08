@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles01.css') }}">
+</head>
+<body>
+    <header>
+        <div class="hearder-c">
+            <h1>Akary</h1>
+            <nav class="navegacion">
+                <a href="#inicio">Inicio</a>
+                <a href="{{ url_for('quienessomos') }}">Quiénes Somos</a>
+                <a href="{{ url_for('servicios') }}">Servicios</a>
+                <a href="{{ url_for('noticias') }}">Noticias</a>
+                <a href="{{ url_for('contacto') }}">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <div>
+            <h1>Akary</h1>
+            <p>Un sistema operativo moderno, elegante y fácil de usar para tu Portatil ó PC.</p>
+            <button onclick="location.href='{{ url_for('descargas') }}'">Descargar Ahora</button>
+            <button href="" class="btn">Instrucciones de instalación</button>
+        </div>
+        <br>
+    </section>
+
+    <section class="linux">
+        <br>
+        <img src="{{ url_for('static', filename='img/linux.jpg')}}" alt="Linux" height="300" />
+    </section>
+
+    <section class="detalles">
+        <div class="caracteristicas">
+            <br>
+            <h2 class="subtitulo">Características</h2>
+            <br>
+            <h1>¿Qué es Akary?</h1>
+            <p>Akary es un sistema operativo para computadoras
+                de escritorio y portátiles. Está diseñado para funcionar
+                de inmediato y viene completamente equipado con las
+                aplicaciones que la mayoría de las personas necesitas.
+            </p>
+        </div>
+
+        <div class="subdetalles">
+            <div class="dell">
+                <h3>Diseño Gráfico</h3>
+                <p>Trabaje en 3D con Blender, dibuje o edite imágenes en
+                    Gimp, use Inkscape para gráfico vectoriales.
+                </p>
+            </div>
+            <br>
+            <div class="dell">
+                <h3>Productividad</h3>
+                <p>Con la completa suite ofimática de LibreOffice, utilice
+                    el procesador de texto, el procesador de textos, haga
+                    presentaciones, dibujos, hojas de cálculo o incluso
+                    base de datoss. Importe o exporte fácilmente documentos
+                    PDFo de Microsoft Office.
+                </p>
+            </div>
+            <br>
+            <div class="dell">
+                <h3>Multimedia</h3>
+                <p>Disfruta de tu música, mira televisión y películas, escucha
+                    podcasts, Spotify y radio en línea.
+                </p>
+            </div>
+            <br>
+            <div class="dell">
+                <h3>Web</h3>
+                <p>Navega por la web, ve YouTube y Netflix con Firefox. Convierte
+                    cualquier sitio web en una aplicación de escritorio para 
+                    acceder al instante.
+                </p>
+            </div>
+            <br>
+            <div class="dell">
+                <h3>Juegos</h3>
+                <p>Accede a más de 7800 juegos con Steam. Instala Heroic Game 
+                    Laucher o Lutris para obtener aún más.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="redes-sociales">
+        <h2>Mis Redes Sociales</h2>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a href="https://facebook.com/" target="_blank">Facebook</a>
+            <a href="https://instagram.com/" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <section class="testimonios">
+        <div class="test">
+            <h2>Testimonios de nuestros clientes</h2>
+            <br>
+            <div class="comentario">
+                <p>Akary cambió mi manera de trabajar, rápido y estable</p>
+                <h4>- Juan Pérez</h4>
+            </div>
+            <div class="comentario">
+                <p>Muy fácil de personalizar. Ideal para mi flujo de trabajo.</p>
+                <h4>- María Gómez</h4>
+            </div>
+            {% for c in comentarios %}
+                <div class="comentario">
+                    <p>{{ c.mensaje }}</p>
+                    <h4>- {{ c.nombre }}</h4>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="nuevo-c">
+        <div class="nuevo">
+            <h2>Deja tu comentario</h2>
+            <br>
+            <form method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <textarea name="comentario" rows="4" placeholder="Escribe tu testimonio..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="ventajas">
+        <div class="vent">
+            <h2>Ventajas del producto</h2>
+            <br>
+            <ul>
+                <li>Rendimiento optimizado para equipos antigus y nuevos.</li>
+                <li>Interfaz personalizable según tus gustos.</li>
+                <li>Basado en Arch Linux, estable y con soporte comunitario.</li>
+            </ul>
+            <br>
+            <div class="acciones">
+                <a href="{{ url_for('descargas') }}">Descargar Ahora</a>
+                <a href="{{ url_for('contacto') }}">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Akary. Todo los derechos reservados.</p>
+    </footer>
+</body>
+</html>
