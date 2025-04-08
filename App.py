@@ -13,5 +13,10 @@ def index():
 
     return render_template('index.html', comentarios=comentarios)
 
+@app.route("/descargas")
+def descargas():
+    return render_template("descargas.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
