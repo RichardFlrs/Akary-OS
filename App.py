@@ -33,6 +33,12 @@ def noticias():
 def contacto():
     return render_template("contacto.html")
 
+@app.route("/proceso", methods=['POST'])
+def proceso():
+    nombre = request.form.get("nombre")
+    email = request.form.get("email")
+    mensaje = request.form.get("mensaje")
+    return render_template("datos.html", nombre=nombre, email=email, mensaje=mensaje)
 
 if __name__ == "__main__":
     app.run(debug=True)
