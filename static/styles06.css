@@ -1,0 +1,110 @@
+/* CONTACTO - CABECERA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #19305C;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.hearder-c h2 {
+    text-align: center;
+}
+
+/* SECCIÓN CONTACTO */
+
+.contact {
+    display: block;
+    margin-top: 30px;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #19305C;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e4183;
+    color: #ffffff;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #19305C;
+}
+
+.cont {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacion {
+    padding: 10px;
+    text-align: center;
+}
+
+.informacion p {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.mapa {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.mapa img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #19305C;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}

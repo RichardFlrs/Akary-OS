@@ -29,6 +29,9 @@ def servicios():
 def noticias():
     return render_template("noticias.html")
 
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles06.css') }}">
+</head>
+<body>
+    <header>
+        <div class="hearder-c">
+            <h2>Akary</h2>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="cont">
+            <h2>Envíanos un mensaje</h2>
+            <br>
+            <form action="/proceso" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre", required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="emial" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="informacion">
+        <br>
+        <h2>Información de Contacto</h2>
+        <p><strong>Dirección:</strong> Calle Salomón Nro 542, La Paz, Bolivia</p>
+        <p><strong>Teléfono:</strong> 800 45 4562</p>
+        <p><strong>Email:</strong> root@akary.com</p>
+        <br>
+        <h2>Ubicación</h2>
+        <div class="mapa">
+            <img src="images/mapa-ficticio.jpg" alt="Ubicación de la empresa">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Akary. Todo los derechos reservados.</p>
+    </footer>
+</body>
+</html>
